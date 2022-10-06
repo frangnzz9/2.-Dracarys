@@ -1,0 +1,28 @@
+@import "variables";
+@import "header";
+@import "nav";
+@import "section";
+@import "footer";
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+/* GRID */
+
+body {
+ display: grid;
+ grid-template-columns: auto;
+ grid-template-rows: auto auto auto auto;
+ grid-template-areas: "header" "nav" "section" "footer";
+
+}
+
+a {
+    text-decoration: none;
+}
+

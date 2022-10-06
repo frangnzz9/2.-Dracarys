@@ -1,0 +1,40 @@
+/*GRID BODY*/
+nav {
+    grid-area: nav;
+}
+
+/*ESTILO BARRA DE NAV*/
+nav {
+    background-color: $colorPrincipal;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    position: sticky;
+    a {
+        color: $colorBlanco;
+        text-decoration: none;
+    img {
+        height: 3rem;
+        width: 3rem;
+       }
+    }
+}
+
+@media (hover: hover) {
+.hover1:hover {
+        background-color: $color4;
+        color: $colorBlanco;
+        border: 1rem transparent;
+        transition-duration: 0.5s;
+        border-radius: 0.3rem;
+        font-size: 1.2rem;
+}
+}
+
+.hover1:active {
+    background-color: $colorNegro;
+    color: $color3;
+    transition-duration: 1s;
+}

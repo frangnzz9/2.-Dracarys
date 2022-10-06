@@ -1,0 +1,17 @@
+ /*GRID BODY*/
+header {
+    grid-area: header;
+}
+
+/*ENCABEZADO DE PÁGINA*/
+header h4 {
+    background-color: $colorPrincipal;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:x-small;
+    text-shadow: .1rem .1rem .1rem $colorNegro;
+}
+

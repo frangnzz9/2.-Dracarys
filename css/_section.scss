@@ -1,0 +1,104 @@
+/*GRID BODY*/
+section {
+    grid-area: section;
+}
+
+/*SECTION STYLES*/
+
+
+/*titulo cursos y servicios*/
+section main h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $colorNegro;
+    height: 100px;
+    color: $colorBlanco;
+    padding: 25px;
+    margin-bottom: 100px;
+
+}
+ 
+/*titulo servicios*/
+#h3-2 {
+margin-top: 100px;
+}
+
+/*CAJAS PADRES*/
+.boxCursosServ {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+
+}
+
+/*CAJA HIJO*/
+.boxSon {
+    
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*ESTILOS DE CAJAS HIJOS*/
+#curso1 {
+ background-image: url("../media/soft-gel.jpeg");
+ background-repeat: no-repeat;
+ background-size: 250px 250px;
+ 
+ p {
+    color:$colorNegro;
+    background-color: $color3;
+    border-radius: 5px;
+    padding: 5px;
+ }
+
+ }
+ 
+ #curso2 {
+    background-image: url("../media/esculpidas-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    p {
+       color:$colorNegro;
+       background-color: $color3;
+       border-radius: 5px;
+       padding: 5px;
+      
+    }
+   
+    }
+    
+    #curso3 {
+        background-image: url("../media/nail-art.jpeg");
+        background-repeat: no-repeat;
+        background-size: 250px 250px;
+        p {
+           color:$colorNegro;
+           background-color: $color3;
+           border-radius: 5px;
+           padding: 5px;
+          
+        }
+       
+        }
+
+        #curso4 {
+            background-image: url("../media/nail-art-2.jpeg");
+            background-repeat: no-repeat;
+            background-size: 250px 250px;
+            p {
+               color:$colorNegro;
+               background-color: $color3;
+              border-radius: 5px;
+               padding: 5px;
+              
+            }
+           
+            }

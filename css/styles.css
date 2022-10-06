@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*GRID BODY*/
+header {
+  grid-area: header;
+}
+
+/*ENCABEZADO DE PÁGINA*/
+header h4 {
+  background-color: #9c3c86;
+  color: white;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-small;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+/*GRID BODY*/
+nav {
+  grid-area: nav;
+}
+
+/*ESTILO BARRA DE NAV*/
+nav {
+  background-color: #9c3c86;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: 0.5rem 0 0.5rem 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a img {
+  height: 3rem;
+  width: 3rem;
+}
+
+@media (hover: hover) {
+  .hover1:hover {
+    background-color: #31233e;
+    color: white;
+    border: 1rem transparent;
+    transition-duration: 0.5s;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+  }
+}
+.hover1:active {
+  background-color: black;
+  color: rgba(206, 225, 216, 0.8);
+  transition-duration: 1s;
+}
+
+/*GRID BODY*/
+section {
+  grid-area: section;
+}
+
+/*SECTION STYLES*/
+/*titulo cursos y servicios*/
+section main h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100px;
+  color: white;
+  padding: 25px;
+  margin-bottom: 100px;
+}
+
+/*titulo servicios*/
+#h3-2 {
+  margin-top: 100px;
+}
+
+/*CAJAS PADRES*/
+.boxCursosServ {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+}
+
+/*CAJA HIJO*/
+.boxSon {
+  height: 250px;
+  width: 250px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*ESTILOS DE CAJAS HIJOS*/
+#curso1 {
+  background-image: url("../media/soft-gel.jpeg");
+  background-repeat: no-repeat;
+  background-size: 250px 250px;
+}
+#curso1 p {
+  color: black;
+  background-color: rgba(206, 225, 216, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#curso2 {
+  background-image: url("../media/esculpidas-2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 250px 250px;
+}
+#curso2 p {
+  color: black;
+  background-color: rgba(206, 225, 216, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#curso3 {
+  background-image: url("../media/nail-art.jpeg");
+  background-repeat: no-repeat;
+  background-size: 250px 250px;
+}
+#curso3 p {
+  color: black;
+  background-color: rgba(206, 225, 216, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#curso4 {
+  background-image: url("../media/nail-art-2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 250px 250px;
+}
+#curso4 p {
+  color: black;
+  background-color: rgba(206, 225, 216, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*GRID BODY*/
+footer {
+  grid-area: footer;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* GRID */
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "nav" "section" "footer";
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
