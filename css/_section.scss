@@ -13,9 +13,9 @@ section main h3 {
     align-items: center;
 
     background-color: $colorNegro;
-    height: 100px;
+    height: 5rem;
     color: $colorBlanco;
-    padding: 25px;
+    padding: 20px;
     margin-bottom: 100px;
 
 }
@@ -26,11 +26,16 @@ margin-top: 100px;
 }
 
 /*CAJAS PADRES*/
-.boxCursosServ {
+.boxCursos {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
+}
 
+.boxServicios {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
 }
 
 /*CAJA HIJO*/
@@ -46,9 +51,9 @@ margin-top: 100px;
 
 }
 
-/*ESTILOS DE CAJAS HIJOS*/
+/*ESTILOS DE CAJAS HIJOS CURSOS*/
 #curso1 {
- background-image: url("../media/soft-gel.jpeg");
+ background-image: url("../media/soft/soft-gel.jpeg");
  background-repeat: no-repeat;
  background-size: 250px 250px;
  
@@ -62,7 +67,7 @@ margin-top: 100px;
  }
  
  #curso2 {
-    background-image: url("../media/esculpidas-2.jpeg");
+    background-image: url("../media/esculpidas/esculpidas-2.jpeg");
     background-repeat: no-repeat;
     background-size: 250px 250px;
     p {
@@ -70,13 +75,13 @@ margin-top: 100px;
        background-color: $color3;
        border-radius: 5px;
        padding: 5px;
-      
+       text-align: center;
     }
    
     }
     
     #curso3 {
-        background-image: url("../media/nail-art.jpeg");
+        background-image: url("../media/nail-art/nail-art.jpeg");
         background-repeat: no-repeat;
         background-size: 250px 250px;
         p {
@@ -90,7 +95,7 @@ margin-top: 100px;
         }
 
         #curso4 {
-            background-image: url("../media/nail-art-2.jpeg");
+            background-image: url("../media/nail-art/nail-art-2.jpeg");
             background-repeat: no-repeat;
             background-size: 250px 250px;
             p {
@@ -101,4 +106,58 @@ margin-top: 100px;
               
             }
            
+            }
+
+            /*ESTILOS DE CAJAS HIJOS SERVICIOS*/
+
+            .boxSon {
+    
+                height: 250px;
+                width: 250px;
+                border: 2px solid black;
+            
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+            }
+
+            #servicio1 {
+                background-image: url("../media/capping/capping.jpeg");
+                background-repeat: no-repeat;
+                background-size: 250px 250px;
+                p {
+                   color:$colorNegro;
+                   background-color: $color3;
+                  border-radius: 5px;
+                   padding: 5px;
+                }
+            }
+
+            #servicio2 {
+                background-image: url("../media/esculpidas/esculpidas.jpeg");
+                background-repeat: no-repeat;
+                background-size: 250px 250px;
+                p {
+                   color:$colorNegro;
+                   background-color: $color3;
+                  border-radius: 5px;
+                   padding: 5px;
+                   text-align: center;
+                  
+                }
+            }
+
+            #servicio3 {
+                background-image: url("../media/semipermanente/semipermanente.jpeg");
+                background-repeat: no-repeat;
+                background-size: 250px 250px;
+                p {
+                   color:$colorNegro;
+                   background-color: $color3;
+                  border-radius: 5px;
+                   padding: 5px;
+                   text-align: center;
+                  
+                }
             }
