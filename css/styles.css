@@ -6,14 +6,14 @@ header {
 
 /*ENCABEZADO DE PÁGINA*/
 header h4 {
-  background-color: #9c3c86;
+  background-color: black;
   color: white;
   padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: x-small;
-  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  text-shadow: 0.08rem 0.08rem 0.08rem white;
 }
 
 /*GRID BODY*/
@@ -23,7 +23,7 @@ nav {
 
 /*ESTILO BARRA DE NAV*/
 nav {
-  background-color: #9c3c86;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -37,13 +37,13 @@ nav a {
   text-decoration: none;
 }
 nav a img {
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 @media (hover: hover) {
   .hover1:hover {
-    background-color: #31233e;
+    background-color: rgb(83, 36, 198);
     color: white;
     border: 1rem transparent;
     transition-duration: 0.5s;
@@ -72,12 +72,6 @@ section main h3 {
   height: 5rem;
   color: white;
   padding: 20px;
-  margin-bottom: 100px;
-}
-
-/*titulo servicios*/
-#h3-2 {
-  margin-top: 100px;
 }
 
 /*CAJAS PADRES*/
@@ -85,29 +79,33 @@ section main h3 {
   display: grid;
   grid-template-columns: auto auto auto auto;
   justify-content: space-evenly;
+  margin: 8rem 0px;
 }
 
 .boxServicios {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;
+  margin: 8rem 0px;
 }
 
 /*CAJA HIJO*/
 .boxSon {
-  height: 250px;
-  width: 250px;
-  border: 2px solid black;
+  height: 300px;
+  width: 300px;
+  border: 0.5px solid black;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 10px 10px 15px 0px;
 }
 
 /*ESTILOS DE CAJAS HIJOS CURSOS*/
 #curso1 {
   background-image: url("../media/soft/soft-gel.jpeg");
   background-repeat: no-repeat;
-  background-size: 250px 250px;
+  background-size: 300px 300px;
 }
 #curso1 p {
   color: black;
@@ -119,7 +117,7 @@ section main h3 {
 #curso2 {
   background-image: url("../media/esculpidas/esculpidas-2.jpeg");
   background-repeat: no-repeat;
-  background-size: 250px 250px;
+  background-size: 300px 300px;
 }
 #curso2 p {
   color: black;
@@ -132,7 +130,7 @@ section main h3 {
 #curso3 {
   background-image: url("../media/nail-art/nail-art.jpeg");
   background-repeat: no-repeat;
-  background-size: 250px 250px;
+  background-size: 300px 300px;
 }
 #curso3 p {
   color: black;
@@ -144,7 +142,7 @@ section main h3 {
 #curso4 {
   background-image: url("../media/nail-art/nail-art-2.jpeg");
   background-repeat: no-repeat;
-  background-size: 250px 250px;
+  background-size: 300px 300px;
 }
 #curso4 p {
   color: black;
@@ -154,19 +152,10 @@ section main h3 {
 }
 
 /*ESTILOS DE CAJAS HIJOS SERVICIOS*/
-.boxSon {
-  height: 250px;
-  width: 250px;
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #servicio1 {
   background-image: url("../media/capping/capping.jpeg");
   background-repeat: no-repeat;
-  background-size: 250px 250px;
+  background-size: 300px 300px;
 }
 #servicio1 p {
   color: black;
@@ -178,7 +167,7 @@ section main h3 {
 #servicio2 {
   background-image: url("../media/esculpidas/esculpidas.jpeg");
   background-repeat: no-repeat;
-  background-size: 250px 250px;
+  background-size: 300px 300px;
 }
 #servicio2 p {
   color: black;
@@ -191,7 +180,7 @@ section main h3 {
 #servicio3 {
   background-image: url("../media/semipermanente/semipermanente.jpeg");
   background-repeat: no-repeat;
-  background-size: 250px 250px;
+  background-size: 300px 300px;
 }
 #servicio3 p {
   color: black;
@@ -208,10 +197,34 @@ footer {
 
 /*STYLES FOOTER*/
 footer {
-  background-color: #9c3c86;
+  background-color: black;
+  height: 200px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer i {
+  color: rgb(83, 36, 198);
+  border: 1px solid rgb(83, 36, 198);
+  border-radius: 100px;
+  padding: 30px;
+}
+footer i:hover {
+  color: rgba(206, 225, 216, 0.8);
+  border: 1px solid rgba(206, 225, 216, 0.8);
+}
+
+aside {
+  background-image: url(../media/collage.png);
+  background-repeat: no-repeat;
+  filter: blur(2.5px);
+  height: 25rem;
   width: 100%;
-  height: 150px;
-  margin-top: 200px;
+  /*margin: 25px 0px;*/
 }
 
 * {
@@ -225,8 +238,8 @@ footer {
 body {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header" "nav" "section" "footer";
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "header" "nav" "aside" "section" "footer";
 }
 
 a {

@@ -6,8 +6,27 @@ footer {
 /*STYLES FOOTER*/
 
 footer {
-    background-color: $colorPrincipal;
-    width: 100%;
-    height: 150px;
-    margin-top:200px;
+    background-color: $colorNegro;
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    i {
+        color: $colorPrincipal;
+        border: 1px solid $colorPrincipal;
+        border-radius: 100px;
+        padding: 30px;
+        
+        &:hover {
+            color: $color3;
+            border: 1px solid $color3;
+        }
+    }
 }
+
+

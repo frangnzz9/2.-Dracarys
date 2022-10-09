@@ -5,13 +5,13 @@ header {
 
 /*ENCABEZADO DE PÁGINA*/
 header h4 {
-    background-color: $colorPrincipal;
+    background-color: $colorNegro;
     color: white;
     padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size:x-small;
-    text-shadow: .1rem .1rem .1rem $colorNegro;
+    text-shadow: 0.08rem 0.08rem 0.08rem $colorBlanco;
 }
 

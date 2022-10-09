@@ -5,7 +5,7 @@ nav {
 
 /*ESTILO BARRA DE NAV*/
 nav {
-    background-color: $colorPrincipal;
+    background-color: $colorNegro;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -16,15 +16,15 @@ nav {
         color: $colorBlanco;
         text-decoration: none;
     img {
-        height: 3rem;
-        width: 3rem;
+        height: 4rem;
+        width: 4rem;
        }
     }
 }
 
 @media (hover: hover) {
 .hover1:hover {
-        background-color: $color4;
+        background-color: $colorPrincipal;
         color: $colorBlanco;
         border: 1rem transparent;
         transition-duration: 0.5s;
