@@ -98,7 +98,7 @@ section main h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 15px 0px;
+  box-shadow: 10px 10px 15px 0px black;
 }
 
 /*ESTILOS DE CAJAS HIJOS CURSOS*/
@@ -106,6 +106,9 @@ section main h3 {
   background-image: url("../media/soft/soft-gel.jpeg");
   background-repeat: no-repeat;
   background-size: 300px 300px;
+}
+#curso1:hover {
+  filter: blur(10px);
 }
 #curso1 p {
   color: black;
