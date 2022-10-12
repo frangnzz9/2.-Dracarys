@@ -16,6 +16,7 @@ header h4 {
   text-shadow: 0.08rem 0.08rem 0.08rem white;
 }
 
+/*CELULAR*/
 /*GRID BODY*/
 nav {
   grid-area: nav;
@@ -57,6 +58,15 @@ nav a img {
   transition-duration: 1s;
 }
 
+/*CELULAR*/
+@media screen and (max-width: 767px) {
+  nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 /*GRID BODY*/
 section {
   grid-area: section;
@@ -193,6 +203,26 @@ section main h3 {
   text-align: center;
 }
 
+/*CELULAR*/
+@media (max-width: 767px) {
+  /*CAJAS PADRES*/
+  .boxCursos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    margin: 8rem 0px;
+    gap: 5rem;
+  }
+  .boxServicios {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    margin: 8rem 0px;
+    gap: 5rem;
+  }
+}
 /*GRID BODY*/
 footer {
   grid-area: footer;
@@ -221,15 +251,39 @@ footer i:hover {
   border: 1px solid rgba(206, 225, 216, 0.8);
 }
 
+/*CELULAR*/
+@media (max-width: 767px) {
+  footer {
+    background-color: black;
+    height: 350px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer i {
+    margin: 20px 0px;
+  }
+}
 aside {
   background-image: url(../media/collage.png);
   background-repeat: no-repeat;
   filter: blur(2.5px);
-  height: 25rem;
+  height: 20rem;
   width: 100%;
   /*margin: 25px 0px;*/
 }
 
+/*CELULAR*/
+@media (max-width: 767px) {
+  aside {
+    background-image: url(../media/collage3.png);
+    background-repeat: no-repeat;
+  }
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -247,4 +301,8 @@ body {
 
 a {
   text-decoration: none;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/* RESPONSIVE */
+/*CELULAR*/
+/*TABLET*//*# sourceMappingURL=styles.css.map */

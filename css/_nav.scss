@@ -38,3 +38,13 @@ nav {
     color: $color3;
     transition-duration: 1s;
 }
+
+/*CELULAR*/
+@media screen and (max-width:767px) {
+ nav {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      align-items: center;
+ }   
+}

@@ -151,4 +151,26 @@ section main h3 {
                 }
             }
 
-            
+            /*CELULAR*/
+@media (max-width:767px) {
+
+    /*CAJAS PADRES*/
+.boxCursos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    margin: 8rem 0px;
+    gap: 5rem;
+}
+
+.boxServicios {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    margin: 8rem 0px;
+    gap: 5rem;
+}
+
+}

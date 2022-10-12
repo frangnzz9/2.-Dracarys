@@ -29,4 +29,21 @@ footer {
     }
 }
 
-
+/*CELULAR*/
+@media (max-width:767px) {
+   
+    footer {
+        background-color: $colorNegro;
+        height: 350px;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        i {
+            margin: 20px 0px;
+        }
+}
+}
