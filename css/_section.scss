@@ -7,7 +7,7 @@ section {
 
 
 /*titulo cursos y servicios*/
-section main h3 {
+section h3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ section main h3 {
     height: 300px;
     width: 300px;
     border: 0.5px solid black;
-    border-radius: 2px;
+    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,15 +54,17 @@ section main h3 {
     background-repeat: no-repeat;
     background-size: 300px 300px;
     
- &:hover{
-    filter: blur(10px);
-    
+/* &:hover{
+    filter: blur(4px);
+    transition: all 500ms ease-out;
  }
+ */
  p {
-    color:$colorNegro;
-    background-color: $color3;
+    color:$color3;
+    background-color:$colorNegroT;
     border-radius: 5px;
     padding: 5px;
+    text-align: center;
  }
 
  }
@@ -72,8 +74,8 @@ section main h3 {
     background-repeat: no-repeat;
     background-size: 300px 300px;
     p {
-       color:$colorNegro;
-       background-color: $color3;
+        color:$color3;
+        background-color:$colorNegroT;
        border-radius: 5px;
        padding: 5px;
        text-align: center;
@@ -86,11 +88,11 @@ section main h3 {
         background-repeat: no-repeat;
         background-size: 300px 300px;
         p {
-           color:$colorNegro;
-           background-color: $color3;
+            color:$color3;
+            background-color:$colorNegroT;
            border-radius: 5px;
            padding: 5px;
-          
+           text-align: center;
         }
        
         }
@@ -100,11 +102,11 @@ section main h3 {
             background-repeat: no-repeat;
             background-size: 300px 300px;
             p {
-               color:$colorNegro;
-               background-color: $color3;
+                color:$color3;
+                background-color:$colorNegroT;
               border-radius: 5px;
                padding: 5px;
-              
+               text-align: center;
             }
            
             }
@@ -116,10 +118,11 @@ section main h3 {
                 background-repeat: no-repeat;
                 background-size: 300px 300px;
                 p {
-                   color:$colorNegro;
-                   background-color: $color3;
+                    color:$color3;
+                    background-color:$colorNegroT;
                   border-radius: 5px;
                    padding: 5px;
+                   text-align: center;
                 }
             }
 
@@ -128,8 +131,8 @@ section main h3 {
                 background-repeat: no-repeat;
                 background-size: 300px 300px;
                 p {
-                   color:$colorNegro;
-                   background-color: $color3;
+                    color:$color3;
+                    background-color:$colorNegroT;
                   border-radius: 5px;
                    padding: 5px;
                    text-align: center;
@@ -142,14 +145,16 @@ section main h3 {
                 background-repeat: no-repeat;
                 background-size: 300px 300px;
                 p {
-                   color:$colorNegro;
-                   background-color: $color3;
+                   color:$color3;
+                   background-color:$colorNegroT;
                   border-radius: 5px;
                    padding: 5px;
                    text-align: center;
                   
                 }
             }
+
+
 
             /*CELULAR*/
 @media (max-width:767px) {
@@ -173,4 +178,60 @@ section main h3 {
     gap: 5rem;
 }
 
+/* PAGINA SERVICIOS.HTML*/
+.contenedorServicios {
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
 }
+
+
+}
+
+/* PAGINA SERVICIOS.HTML*/
+.contenedorServicios {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+
+.contenedorHijoServicios {
+   
+    background-color: $color3;
+    width: 400px;
+    height: 620px;
+    margin: 50px;
+    border: 0.5px solid black;
+    border-radius: 3px;
+    padding: 20px;
+    
+    img {
+        width: 300px;
+        height:300px;
+        border: 0.5px solid black;
+        border-radius: 1000px;
+        box-shadow: 10px 10px 15px 0px $colorNegro;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+}
+
+.contenedorServicios h4 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contenedorHijoServicios p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+

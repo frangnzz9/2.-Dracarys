@@ -30,6 +30,7 @@ nav {
         transition-duration: 0.5s;
         border-radius: 0.3rem;
         font-size: 1.2rem;
+        transition: all 500ms ease-out;
 }
 }
 
@@ -37,6 +38,7 @@ nav {
     background-color: $colorNegro;
     color: $color3;
     transition-duration: 1s;
+    
 }
 
 /*CELULAR*/
