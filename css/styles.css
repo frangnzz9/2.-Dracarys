@@ -210,6 +210,36 @@ section h3 {
   text-align: center;
 }
 
+.contenedorHijoServicios {
+  background-color: rgba(206, 225, 216, 0.8);
+  width: 400px;
+  height: 620px;
+  margin: 50px;
+  border: 0.5px solid black;
+  border-radius: 3px;
+  padding: 20px;
+}
+.contenedorHijoServicios img {
+  width: 300px;
+  height: 300px;
+  border: 0.5px solid black;
+  border-radius: 1000px;
+  box-shadow: 10px 10px 15px 0px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorServicios h4 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contenedorHijoServicios p {
+  text-align: center;
+  margin-top: 10px;
+}
+
 /*CELULAR*/
 @media (max-width: 767px) {
   /*CAJAS PADRES*/
@@ -246,36 +276,6 @@ section h3 {
   justify-content: center;
   align-items: center;
   padding: 50px 0px;
-}
-
-.contenedorHijoServicios {
-  background-color: rgba(206, 225, 216, 0.8);
-  width: 400px;
-  height: 620px;
-  margin: 50px;
-  border: 0.5px solid black;
-  border-radius: 3px;
-  padding: 20px;
-}
-.contenedorHijoServicios img {
-  width: 300px;
-  height: 300px;
-  border: 0.5px solid black;
-  border-radius: 1000px;
-  box-shadow: 10px 10px 15px 0px black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contenedorServicios h4 {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.contenedorHijoServicios p {
-  text-align: center;
-  margin-top: 10px;
 }
 
 /*GRID BODY*/

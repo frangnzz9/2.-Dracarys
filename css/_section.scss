@@ -156,6 +156,42 @@ section h3 {
 
 
 
+            .contenedorHijoServicios {
+   
+                background-color: $color3;
+                width: 400px;
+                height: 620px;
+                margin: 50px;
+                border: 0.5px solid black;
+                border-radius: 3px;
+                padding: 20px;
+                
+                img {
+                    width: 300px;
+                    height:300px;
+                    border: 0.5px solid black;
+                    border-radius: 1000px;
+                    box-shadow: 10px 10px 15px 0px $colorNegro;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                
+                }
+            }
+            
+            .contenedorServicios h4 {
+                text-align: center;
+                margin-top: 2rem;
+            }
+            
+            .contenedorHijoServicios p {
+                text-align: center;
+                margin-top: 10px;
+            }
+            
+            
+
+
             /*CELULAR*/
 @media (max-width:767px) {
 
@@ -187,7 +223,6 @@ section h3 {
     align-items: center;
 }
 
-
 }
 
 /* PAGINA SERVICIOS.HTML*/
@@ -200,38 +235,5 @@ section h3 {
     padding: 50px 0px;
 }
 
-
-.contenedorHijoServicios {
-   
-    background-color: $color3;
-    width: 400px;
-    height: 620px;
-    margin: 50px;
-    border: 0.5px solid black;
-    border-radius: 3px;
-    padding: 20px;
-    
-    img {
-        width: 300px;
-        height:300px;
-        border: 0.5px solid black;
-        border-radius: 1000px;
-        box-shadow: 10px 10px 15px 0px $colorNegro;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-}
-
-.contenedorServicios h4 {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.contenedorHijoServicios p {
-    text-align: center;
-    margin-top: 10px;
-}
 
 
