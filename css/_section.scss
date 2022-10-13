@@ -154,9 +154,18 @@ section h3 {
                 }
             }
 
+/* PAGINA SERVICIOS.HTML*/
+.contenedorServicios {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
 
 
-            .contenedorHijoServicios {
+.contenedorHijoServicios {
    
                 background-color: $color3;
                 width: 400px;
@@ -217,23 +226,15 @@ section h3 {
 /* PAGINA SERVICIOS.HTML*/
 .contenedorServicios {
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     justify-content: center;
     align-items: center;
+    width: 330px;
 }
 
 }
 
-/* PAGINA SERVICIOS.HTML*/
-.contenedorServicios {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0px;
-}
 
 
 
