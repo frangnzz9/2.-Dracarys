@@ -373,22 +373,32 @@ footer i:hover {
     margin: 20px 0px;
   }
 }
+
 aside {
-  background-image: url(../media/collage.png);
-  background-repeat: no-repeat;
-  filter: blur(2.5px);
-  height: 20rem;
-  width: 100%;
-  /*margin: 25px 0px;*/
+    background-image: url(../media/collage.png);
+    background-repeat: repeat;
+    filter: blur(2.5px);
+    height: 20rem;
+    width: 100%;
+    /*margin: 25px 0px;*/
 }
 
 /*CELULAR*/
-@media (max-width: 767px) {
-  aside {
-    background-image: url(../media/collage3.png);
-    background-repeat: no-repeat;
-  }
+@media (max-width:767px) {
+ aside {
+    background-image: url(../media/collage.png);
+    background-repeat:repeat;
+    width: 100%;
+ }
 }
+
+/*TABLET*/
+@media (max-width:1023) {
+    background-image: url(../media/collage.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
 * {
   padding: 0px;
   margin: 0px;
